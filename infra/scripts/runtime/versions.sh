@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2034
+# Direct-package version pins for the language toolchain images.
+# Alpine 3.21 (fixed release). Version numbers only — no sha256/digest pins.
+# apk pins are exact; third-party tools are pinned by release version.
+
+# --- alpine base (3.21, fixed release) ---
+ALPINE_VERSION=3.21
+
+# --- core (shared by every image) ---
+APK_COREUTILS=9.5-r2
+APK_CURL=8.14.1-r3
+APK_CA_CERTIFICATES=20261020-r0
+
+# --- node (node/npm + markdownlint) ---
+APK_NODEJS=22.23.4-r0
+APK_NPM=10.9.1-r0
+MARKDOWNLINT_CLI_VERSION=0.49.1
+
+# --- python (python3 + yamllint) ---
+APK_PYTHON3=3.12.15-r0
+APK_YAMLLINT=1.35.1-r1
+
+# --- rust (rust/cargo) ---
+APK_RUST=1.83.0-r1
+APK_CARGO=1.83.0-r1
+
+# --- cpp (gcc/g++/make/cmake/clang) ---
+APK_GCC=14.2.0-r4
+APK_GPP=14.2.0-r4
+APK_MAKE=4.4.1-r2
+APK_CMAKE=3.31.1-r0
+APK_CLANG=19.1.4-r0
+APK_CLANG_EXTRA_TOOLS=19.1.4-r0
+
+# --- go (golang) ---
+APK_GO=1.23.9-r0
+
+# --- java (OpenJDK 21 / Maven / Gradle) ---
+APK_OPENJDK21=21.0.10_p7-r0
+APK_MAVEN=3.9.9-r0
+APK_GRADLE=8.11.1-r0
+
+# --- media (ffmpeg + imagemagick) ---
+APK_FFMPEG=6.1.2-r1
+APK_IMAGEMAGICK=7.1.1.41-r0

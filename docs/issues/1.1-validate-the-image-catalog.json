@@ -1,0 +1,18 @@
+{
+  "rank": "1.1",
+  "title": "Validate the image catalog",
+  "context": "The image set needs a stable catalog.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Document every image and its purpose.",
+    "expected_outcome": "A consumer can choose the right image.",
+    "acceptance_criteria": [
+      "Every Dockerfile is listed",
+      "Ownership is documented"
+    ]
+  },
+  "attempts": []
+}

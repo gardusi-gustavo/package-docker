@@ -1,0 +1,18 @@
+{
+  "rank": "2.2",
+  "title": "Add a CI image smoke test",
+  "context": "Dockerfiles are only checked structurally.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Build one image in CI when Docker is available.",
+    "expected_outcome": "The base image builds successfully.",
+    "acceptance_criteria": [
+      "Build is conditional",
+      "Failure is visible"
+    ]
+  },
+  "attempts": []
+}

@@ -1,0 +1,18 @@
+{
+  "rank": "2.3",
+  "title": "Document runtime installers",
+  "context": "Runtime scripts are undocumented.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a page per language/runtime.",
+    "expected_outcome": "A contributor can extend the images.",
+    "acceptance_criteria": [
+      "Scripts are listed",
+      "Versions are current"
+    ]
+  },
+  "attempts": []
+}

@@ -1,0 +1,18 @@
+{
+  "rank": "2.1",
+  "title": "Add image metadata",
+  "context": "Images lack provenance metadata.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Generate labels and a metadata file.",
+    "expected_outcome": "Every image records source and version.",
+    "acceptance_criteria": [
+      "Labels are consistent",
+      "Metadata is published"
+    ]
+  },
+  "attempts": []
+}

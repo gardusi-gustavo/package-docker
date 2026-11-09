@@ -1,0 +1,18 @@
+{
+  "rank": "1.4",
+  "title": "Use GHCR as cache only",
+  "context": "GHCR is not a public artifact.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Document cache-only usage.",
+    "expected_outcome": "No public image depends on GHCR.",
+    "acceptance_criteria": [
+      "Cache is documented",
+      "Docker Hub remains runtime"
+    ]
+  },
+  "attempts": []
+}

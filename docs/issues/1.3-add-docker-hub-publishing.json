@@ -1,0 +1,18 @@
+{
+  "rank": "1.3",
+  "title": "Add Docker Hub publishing",
+  "context": "Images are built locally only.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a tag-triggered publish path.",
+    "expected_outcome": "A version publishes the image set.",
+    "acceptance_criteria": [
+      "Credentials are environment secrets",
+      "Push is opt-in"
+    ]
+  },
+  "attempts": []
+}
